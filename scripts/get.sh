@@ -1,4 +1,4 @@
-for i in facebook geolocation-!cn google netflix private telegram twitter
+for i in facebook geolocation-!cn google netflix private telegram twitter fastly cloudflare
 do
   echo "- Download $i"
   curl -sSL https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/${i}.list |sed "s/\+\.//g" |sed "s/^/full:/g" > data/${i}
