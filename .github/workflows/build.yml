@@ -38,7 +38,7 @@ jobs:
           cd code || exit 1
           mkdir data
           sh scripts/get.sh || exit 1
-          go run ./ --outputdir=../ --exportlists=facebook,geolocation-\!cn,gfw,google,netflix,private,telegram,twitter
+          go run ./ --outputdir=../ --exportlists=facebook,geolocation-\!cn,gfw,google,netflix,private,telegram,twitter,fastly,cloudflare
           cd ../ && rm -rf code
 
       - name: Generate geosite.dat sha256 hash
