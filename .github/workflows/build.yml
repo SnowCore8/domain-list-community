@@ -36,6 +36,7 @@ jobs:
       - name: Build geosite.dat file
         run: |
           cd code || exit 1
+          mkdir data
           sh scripts/get.sh || exit 1
           go run ./ --outputdir=../ --exportlists=facebook,geolocation-\!cn,gfw,google,netflix,private,telegram,twitter
           cd ../ && rm -rf code
