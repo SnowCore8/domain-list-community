@@ -1,3 +1,7 @@
+wget -O data.zip https://github.com/v2fly/domain-list-community/archive/refs/heads/master.zip
+unzip -j ./data.zip "*/data/*" -d ./data
+rm -f data.zip
+
 for i in facebook geolocation-!cn google netflix private telegram twitter fastly cloudflare
 do
   echo "- Download $i"
