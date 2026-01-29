@@ -1,0 +1,8 @@
+full:fastly-edge.com
+full:fastly-terrarium.com
+full:fastly.com
+full:fastly.io
+full:fastly.net
+full:fastlylabs.com
+full:fastlylb.net
+full:zencdn.net
